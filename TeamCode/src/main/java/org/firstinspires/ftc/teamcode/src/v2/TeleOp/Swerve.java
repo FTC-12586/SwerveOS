@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode.src.v2.TeleOp;
 
 //Import EVERYTHING we need
 //import com.acmerobotics.dashboard.config.Config;
-//import com.outoftheboxrobotics.photoncore.PhotonCore;
+import com.outoftheboxrobotics.photoncore.PhotonCore;
 
 import com.qualcomm.hardware.lynx.LynxModule;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -67,8 +67,8 @@ public class Swerve extends LinearOpMode {
         controlHub.setBulkCachingMode(LynxModule.BulkCachingMode.MANUAL);
 
         //Fast loop go brrr
-//        PhotonCore.enable();
-//        PhotonCore.experimental.setMaximumParallelCommands(8);
+        PhotonCore.enable();
+        PhotonCore.experimental.setMaximumParallelCommands(8);
 //
 //        slide.addOffset(right.slider);
 
